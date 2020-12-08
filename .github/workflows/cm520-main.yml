@@ -27,7 +27,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default.bak
-  CONFIG_FILE: cm520-main.config
+  CONFIG_FILE: .config.cm520-lienol-20201208-1309
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
