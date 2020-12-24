@@ -25,7 +25,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: main
+  REPO_BRANCH: 19.07
   FEEDS_CONF: feeds.conf.default.bak
   CONFIG_FILE: .config.cm520-lienol-20201208-1309
   DIY_P1_SH: diy-part1.sh
@@ -62,7 +62,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone -b 19.07 --single-branch $REPO_BRANCH openwrt
+        git clone -b $REPO_BRANCD --single-branch $REPO_URL openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
